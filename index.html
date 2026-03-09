@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SCTEC - Portfólio</title>
 </head>
 
 <body>
@@ -25,15 +25,15 @@
         <h2>Sobre Mim</h2>
         <img src="eu.png" alt="Sabrina Babiss Corrêa" title="Sabrina Babiss Corrêa" width="120" height="120">
         <article>
-            <p>Sabrina está aprendendo a realizar a criação de um portfólio.</p>
+            <p>Estou aprendendo a realizar a criação de um portfólio através do curso do SCTEC.</p>
         </article>
 
         <aside>
             <h3>novos topicos</h3>
             <ul>
-                <li><a href="img">HTML</a></li>
-                <li><a href="png">CSS</a></li>
-                <li><a href="jpg">JavaScript</a></li>
+                <li><a href="html">HTML</a></li>
+                <li><a href="css">CSS</a></li>
+                <li><a href="javascript">JavaScript</a></li>
             </ul>
         </aside>
     </section>
@@ -41,21 +41,44 @@
         <h2>Projetos</h2>
         <article>
             <h3>Portfólio</h3>
-            <p>Esse foi o primeiro site que desenvolvi, estudando front-end com o SCTEC.</p>
+            <p>Esse é o primeiro site que desenvolvi estudando front-end com o SCTEC.</p>
 
         </article>
     </section>
 
     <footer>
-        <p>Direitos reservados a Sabrina</p>
+        <p>Direitos reservados a Sabrina Babiss Corrêa</p>
         <section id="contato">
             <h2>Contatos</h2>
-            <p>Tem algum projeto em mente? Entre em contato comigo!</p>
-
             <address>
-                E-mail: <a href="mailto:sabrina@sabrina.com">sabrina@sabrina.com</a>
-                <br>
-                telefone: <a href="tel:+5511999999999">(11) 99999-9999</a>
+                <p>Abaixo vocë pode me contactar.</p>
+                <form action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required> <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> <br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone"> <br>
+
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="">assunto
+                        <option value="orçamento">Orçamento</option>
+                        <option value="duvida">Dúvidas</option>
+                        <option value="outro">Outros</option>
+
+                    </select> <br>
+
+                    <label for="mensagem">Mensagem:</label> <br>
+                    <textarea name="mensagem" id="mensagem" cols="15" rows="3" required></textarea> <br>
+
+                    <input type="checkbox" id="inscricao" name="inscricao">
+                    <label for="inscricao">Desejo me inscrever para receber novidades</label> <br>
+
+                    <input type="submit" value="Enviar mensagem">
+
+                </form>
             </address>
 
         </section>
