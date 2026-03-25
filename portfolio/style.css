@@ -1,3 +1,4 @@
+ 
  /* A caixa com desfoque e transição */
 
  .content-glass {
@@ -204,10 +205,73 @@
 }
 
 
-#construcao{
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    padding-left: 300px;
+#construcao {
+    width: 100px; /* Mantemos o tamanho que você definiu */
+    height: auto; /* Garante que a altura se ajuste proporcionalmente */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin-top: 20px; /* Dá um espaço para o texto de cima */
+    margin-bottom: 20px; /* Dá um espaço para o conteúdo de baixo */
+}
+
+
+/* --- AJUSTES PARA CELULAR (TELA EM PÉ) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Garante que o fundo cubra a tela toda mesmo no scroll */
+    .grid-background {
+        width: 1000vw;
+        height: 100vh;
+        position: fixed;
+        
+    }
+
+    /* 2. Evita que o menu suba demais e cubra o botão de voltar */
+    main {
+        padding-top: 80px; /* Dá espaço para o header/botão home */
+    }
+
+    header {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 100; /* Garante que o botão home fique por cima de tudo */
+    }
+
+    /* 3. Ajusta a caixa de conteúdo para não vazar da tela */
+    .content-glass {
+        width: 95%;
+        padding: 5px;
+        font-size: 1px;
+    }
+
+    /* 4. REGRAS PARA O SOBRE MIM NO CELULAR */
+    .sessao-livre {
+        padding: 20px; /* Reduz os 80px que estavam esmagando o texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .minha-foto {
+        float: none !important; /* Tira a foto do lado do texto */
+        margin: 0  20px auto; /* Centraliza a foto e dá espaço embaixo */
+        width: 120px;
+        height: 135px;
+    }
+
+    /* 5. AJUSTE DA LOGO DE FUNDO (VERTICAL) */
+    .vertical {
+        width: 100%; /* Faz ela caber na largura do celular */
+        max-width: 350px; 
+        opacity: 0.05; /* Deixa bem mais clarinha para não atrapalhar a leitura */
+        transform: translateY(-50%); /* Centraliza melhor */
+        pointer-events: none; /* Garante que ela não bloqueie cliques nos botões */
+    }
+
+    /* 6. AJUSTE DO FORMULÁRIO DE CONTATO */
+    form {
+        width: 100%;
+        max-width: 300px;
+    }
 }
