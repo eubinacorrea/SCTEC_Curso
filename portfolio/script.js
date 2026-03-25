@@ -4,6 +4,7 @@ function changeTab(section) {
     const text = document.getElementById('text-content'); // Mantém o título na box
     const backBtn = document.getElementById('back-button');
     const corpo = document.getElementById('corpo-do-site'); // Onde a mágica acontece agora
+    const logoFundo = document.getElementsByClassName('vertical')[0];
 
     // Efeito visual de transição na box de menu
     box.classList.add('glitch-effect');
@@ -17,6 +18,13 @@ function changeTab(section) {
     if (grid) grid.style.backgroundColor = colors[section];
 
     setTimeout(() => {
+     if (section === 'skills' || section === 'lab' || section === 'contato') {
+            logoFundo.style.marginTop = "500px";
+            logoFundo.style.opacity = "0.03";
+        } else {
+            logoFundo.style.marginTop = "800px";
+            logoFundo.style.opacity = "0.9"; }// Valor para a home/bio
+
         // --- LÓGICA DO BOTÃO VOLTAR ---
         if (section === 'bio') {
             backBtn.classList.add('hidden');
@@ -92,3 +100,4 @@ function changeTab(section) {
         box.classList.remove('glitch-effect');
     }, 400);
 }
+

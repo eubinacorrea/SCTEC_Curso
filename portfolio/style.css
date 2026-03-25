@@ -51,7 +51,7 @@
  main {
      font-family: 'Lucida Sans';
      color: rgb(255, 255, 255);
-     padding: px;
+     padding: 15px;
      /* Ativa o Flexbox para centralizar os filhos (o box de vidro) */
      display: flex;
      flex-direction: column;
@@ -172,9 +172,12 @@
 }
 
 .vertical{
-    padding: 100px;
-    width: 500px;
-    
+    padding: 1px;
+    width: 800px;
+    opacity: 0.05;
+    display: block;
+    position: fixed;
+    margin-top: 800px;
 }
 
 
