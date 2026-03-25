@@ -19,11 +19,11 @@ function changeTab(section) {
 
     setTimeout(() => {
      if (section === 'skills' || section === 'lab' || section === 'contato') {
-            logoFundo.style.marginTop = "500px";
-            logoFundo.style.opacity = "0.03";
+            logoFundo.style.top = "50%"; 
+            logoFundo.style.opacity = "0.04";
         } else {
-            logoFundo.style.marginTop = "800px";
-            logoFundo.style.opacity = "0.9"; }// Valor para a home/bio
+            logoFundo.style.top = "50%"; 
+            logoFundo.style.opacity = "0.8"; }// Valor para a home/bio
 
         // --- LÓGICA DO BOTÃO VOLTAR ---
         if (section === 'bio') {
