@@ -36,18 +36,18 @@ function changeTab(section) {
         // --- TROCA DE CONTEÚDO ---
         
         if (section === 'bio') {
-            text.innerHTML = "<h2>Olá,</h2><p>o que você quer saber primeiro sobre mim?</p>";
+            
         }
         
         else if (section === 'skills') {
             // No menu deixamos apenas o título
-            text.innerHTML = "<h2>Sobre Mim</h2>";
+            text.innerHTML = "<h2></h2>";
             
             // No CORPO DO SITE (quadrado vermelho) colocamos a sua história
             corpo.innerHTML = `
                 <div class="sessao-livre">
                     <img src="eu.png" class="minha-foto" style="float: left; margin-right: 30px;">
-                    <p>Olá! Eu sou a Sabrina, estudante de Desenvolvimento Web...</p>
+                    <p>Olá! Eu sou a Sabrina, estudo Desenvolvimento Web...</p>
                     <p>Aqui você pode escrever parágrafos longos, contar sobre sua transição de carreira, 
                     sua experiência com suporte técnico e seus planos para o futuro pós-SCTEC.</p>
                     <p>Como esse espaço não tem caixa, ele pode crescer o quanto você precisar!</p>
@@ -56,7 +56,7 @@ function changeTab(section) {
         }
         
         else if (section === 'lab') {
-            text.innerHTML = "<h2>Projetos</h2>";
+            text.innerHTML = "<h2></h2>";
             corpo.innerHTML = `
                 <div class="sessao-livre">
                     <div class="projeto-item">
@@ -72,7 +72,7 @@ function changeTab(section) {
         }// COLOCAR AS IMAGENS DOS PROJETOS ACIMA
         
         else if (section === 'contato') {
-            text.innerHTML = "<h2>Contato</h2>";
+            text.innerHTML = "<h2></h2>";
             corpo.innerHTML = `
                 <div class="sessao-livre" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                     <p>Vamos conversar? <br> Você pode me enviar uma mensagem:</p>                     
