@@ -38,11 +38,12 @@ function changeTab(section) {
             // No CORPO DO SITE (quadrado vermelho) colocamos a sua história
             corpo.innerHTML = `
                 <div class="sessao-livre">
-                    <img src="eu.png" class="minha-foto" style="float: left; margin-right: 20px;">
+                    <img src="eu.png" class="minha-foto" style="float: left; margin-right: 30px;">
                     <p>Olá! Eu sou a Sabrina, estudante de Desenvolvimento Web...</p>
                     <p>Aqui você pode escrever parágrafos longos, contar sobre sua transição de carreira, 
                     sua experiência com suporte técnico e seus planos para o futuro pós-SCTEC.</p>
                     <p>Como esse espaço não tem caixa, ele pode crescer o quanto você precisar!</p>
+                    
                 </div>`;
         }
         
@@ -51,31 +52,39 @@ function changeTab(section) {
             corpo.innerHTML = `
                 <div class="sessao-livre">
                     <div class="projeto-item">
-                        <h3>🛒 Comparador de Preços - Blumenau</h3>
-                        <p>App criado para monitorar preços nos mercados Giassi, Cooper e Bistek.</p>
-                        <a href="https://github.com/eubinacorrea" target="_blank" style="color: #00fff0;">[ Ver Código no GitHub ]</a>
-                    </div>
-                    <hr style="margin: 20px 0; opacity: 0.2;">
-                    <div class="projeto-item">
                         <h3>💻 Projeto SCTEC</h3>
-                        <p>Desenvolvido durante o curso da Sesi Senai.</p>
+                        <p>Todos os projetos abaixo foram desenvolvidos durante o curso SCTEC - SESI/SENAI.</p>
+                        <a href="https://github.com/eubinacorrea/SCTEC_Curso/" target="_blank" style="color: #ffffff;">[ Ver Códigos no GitHub ]</a>
                     </div>
+                    <hr style="margin: 20px 0; opacity: 0.3;">
+                
+                    <img src="" alt="noem do projeto" id="">
+
                 </div>`;
-        }
+        }// COLOCAR AS IMAGENS DOS PROJETOS ACIMA
         
         else if (section === 'contato') {
             text.innerHTML = "<h2>Contato</h2>";
             corpo.innerHTML = `
                 <div class="sessao-livre">
-                    <p>Vamos conversar? Você pode me encontrar aqui:</p>
+                    <p>Vamos conversar? Você pode me enviar uma mensagem:</p>                    
                     <form style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
-                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0,0,0,0.3); color: white; border: 1px solid #fff;">
-                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.3); color: white; border: 1px solid #fff; height: 100px;"></textarea>
+
+                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60;">
+
+                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60;">
+
+                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; height: 100px;"></textarea>
+
                         <button type="submit" class="btn-nav"><span>Enviar</span></button>
                     </form>
                     <div style="margin-top: 20px;">
-                        <p>Ou pelas redes:</p>
-                        <a href="#" style="color: #00fff0;">LinkedIn</a> | <a href="#" style="color: #00fff0;">GitHub</a>
+                        <p>Ou me contatar pelas redes:</p>
+                        <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="linkedin.png" alt="LinkedIn" id="contato"></a> | 
+
+                        <a href="https://github.com/eubinacorrea"><img src="github.png" alt="GitHub" id="contato"></a> | 
+
+                        <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="whatsapp.png" alt="Whatsapp" id="contato"></a>
                     </div>
                 </div>`;
         }
