@@ -67,7 +67,7 @@ function changeTab(section) {
                     </div>
                     <hr style="margin: 20px 0; opacity: 0.3;">
                 
-                    <p>Portfólio ainda em construção, em breve imagem com link para todos os projetos realizados </p><img src="construindo.png" alt="construção" id="construcao">
+                    <p>Portfólio ainda em construção, em breve imagem com link para todos os projetos realizados </p><img src="aviso.svg" alt="construção" id="construcao">
                     
 
                 </div>`;
