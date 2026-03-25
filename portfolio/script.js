@@ -74,25 +74,25 @@ function changeTab(section) {
         else if (section === 'contato') {
             text.innerHTML = "<h2>Contato</h2>";
             corpo.innerHTML = `
-                <div class="sessao-livre">
-                    <p>Vamos conversar? Você pode me enviar uma mensagem:</p>                    
-                    <form style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
-
-                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60;">
-
-                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60;">
-
-                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; height: 100px;"></textarea>
-
-                        <button type="submit" class="btn-nav"><span>Enviar</span></button>
+                <div class="sessao-livre" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <p>Vamos conversar? <br> Você pode me enviar uma mensagem:</p>                     
+                    
+                    <form style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 400px;">
+                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px; height: 100px; resize: none;"></textarea>
+                        <button type="submit" class="btn-nav" style="align-self: center; width: 150px;"><span>Enviar</span></button>
                     </form>
-                    <div style="margin-top: 20px;">
+
+                    <div style="margin-top: 30px;">
                         <p>Ou me contatar pelas redes:</p>
-                        <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="linkedin.png" alt="LinkedIn" id="contato"></a> | 
-
-                        <a href="https://github.com/eubinacorrea"><img src="github.png" alt="GitHub" id="contato"></a> | 
-
-                        <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="whatsapp.png" alt="Whatsapp" id="contato"></a>
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                            <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="linkedin.png" alt="LinkedIn" id="contato"></a>
+                            <span style="opacity: 0.3;">|</span>
+                            <a href="https://github.com/eubinacorrea"><img src="github.png" alt="GitHub" id="contato"></a>
+                            <span style="opacity: 0.3;">|</span>
+                            <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="whatsapp.png" alt="Whatsapp" id="contato"></a>
+                        </div>
                     </div>
                 </div>`;
         }
