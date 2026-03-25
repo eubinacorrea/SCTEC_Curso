@@ -66,7 +66,8 @@ function changeTab(section) {
                     </div>
                     <hr style="margin: 20px 0; opacity: 0.3;">
                 
-                    <img src="" alt="noem do projeto" id="">
+                    <p>Portfólio ainda em construção, em breve imagem com link para todos os projetos realizados </p><img src="construindo.png" alt="construção" id="construcao">
+                    
 
                 </div>`;
         }// COLOCAR AS IMAGENS DOS PROJETOS ACIMA
@@ -91,11 +92,11 @@ function changeTab(section) {
                     <div style="margin-top: 30px;">
                         <p>Ou me contatar pelas redes:</p>
                         <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-                            <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="icon_linkedin_1.svg" alt="LinkedIn" id="contato"></a>
+                            <a href="https://www.linkedin.com/in/biinaa-correa/" target="_blank"><img src="icon_linkedin_1.svg" alt="LinkedIn" id="contato"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://github.com/eubinacorrea"><img src="icon_github.svg" alt="GitHub" id="contato"></a>
+                            <a href="https://github.com/eubinacorrea" target="_blank"><img src="icon_github.svg" alt="GitHub" id="contato"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="icon_whats.svg" alt="Whatsapp" id="contato"></a>
+                            <a href="https://api.whatsapp.com/send?phone=5547996132914"target="_blank"><img src="icon_whats.svg" alt="Whatsapp" id="contato"></a>
                         </div>
                     </div>
                 </div>`;

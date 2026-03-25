@@ -204,3 +204,10 @@
 }
 
 
+#construcao{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-left: 300px;
+}
