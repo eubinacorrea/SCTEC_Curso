@@ -18,12 +18,13 @@ function changeTab(section) {
     if (grid) grid.style.backgroundColor = colors[section];
 
     setTimeout(() => {
-     if (section === 'skills' || section === 'lab' || section === 'contato') {
-            logoFundo.style.top = "50%"; 
+        if (section === 'skills' || section === 'lab' || section === 'contato') {
+            logoFundo.style.top = "50%";
             logoFundo.style.opacity = "0.04";
         } else {
-            logoFundo.style.top = "50%"; 
-            logoFundo.style.opacity = "0.8"; }// Valor para a home/bio
+            logoFundo.style.top = "50%";
+            logoFundo.style.opacity = "0.8";
+        }// Valor para a home/bio
 
         // --- LÓGICA DO BOTÃO VOLTAR ---
         if (section === 'bio') {
@@ -34,15 +35,15 @@ function changeTab(section) {
         }
 
         // --- TROCA DE CONTEÚDO ---
-        
+
         if (section === 'bio') {
-            
+
         }
-        
+
         else if (section === 'skills') {
             // No menu deixamos apenas o título
             text.innerHTML = "<h2></h2>";
-            
+
             // No CORPO DO SITE (quadrado vermelho) colocamos a sua história
             corpo.innerHTML = `
                 <div class="sessao-livre">
@@ -54,7 +55,7 @@ function changeTab(section) {
                     
                 </div>`;
         }
-        
+
         else if (section === 'lab') {
             text.innerHTML = "<h2></h2>";
             corpo.innerHTML = `
@@ -71,32 +72,33 @@ function changeTab(section) {
 
                 </div>`;
         }// COLOCAR AS IMAGENS DOS PROJETOS ACIMA
-        
+
         else if (section === 'contato') {
             text.innerHTML = "<h2></h2>";
             corpo.innerHTML = `
                 <div class="sessao-livre" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p>Vamos conversar? <br> Você pode me enviar uma mensagem:</p>                     
+                    <p>Vamos conversar? <br> Você pode me enviar uma mensagem:</p>                    
                     
-                    <form style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 400px;">
+                    <form onsubmit="alert('Mensagem enviada com sucesso!'); this.reset(); return false;" 
+                          style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 400px; margin-bottom: 30px;">
 
-                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+                        <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;" required>
 
-                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;" required>
 
-                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px; height: 100px; resize: none;"></textarea>
+                        <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px; height: 100px; resize: none;" required></textarea>
 
                         <button type="submit" class="btn-nav" style="align-self: center; width: 150px;"><span>Enviar</span></button>
                     </form>
 
-                    <div style="margin-top: 30px;">
-                        <p>Ou me contatar pelas redes:</p>
-                        <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-                            <a href="https://www.linkedin.com/in/biinaa-correa/" target="_blank"><img src="icon_linkedin_1.svg" alt="LinkedIn" id="contato"></a>
+                    <div style="width: 100%;">
+                        <p style="margin-bottom: 15px;">Ou me contatar pelas redes:</p>
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+                            <a href="https://www.linkedin.com/in/biinaa-correa/" target="_blank"><img src="icon_linkedin_1.svg" alt="LinkedIn" style="width: 40px; height: 40px;"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://github.com/eubinacorrea" target="_blank"><img src="icon_github.svg" alt="GitHub" id="contato"></a>
+                            <a href="https://github.com/eubinacorrea" target="_blank"><img src="icon_github.svg" alt="GitHub" style="width: 40px; height: 40px;"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://api.whatsapp.com/send?phone=5547996132914"target="_blank"><img src="icon_whats.svg" alt="Whatsapp" id="contato"></a>
+                            <a href="https://api.whatsapp.com/send?phone=5547996132914" target="_blank"><img src="icon_whats.svg" alt="Whatsapp" style="width: 40px; height: 40px;"></a>
                         </div>
                     </div>
                 </div>`;
@@ -106,3 +108,11 @@ function changeTab(section) {
     }, 400);
 }
 
+const formulario = document.getElementById('meuFormContato');
+if (formulario) {
+    formulario.onsubmit = function (event) {
+        event.preventDefault();
+        alert('Mensagem enviada com sucesso!');
+        formulario.reset();
+    };
+}
