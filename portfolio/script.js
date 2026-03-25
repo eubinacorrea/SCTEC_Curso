@@ -87,11 +87,11 @@ function changeTab(section) {
                     <div style="margin-top: 30px;">
                         <p>Ou me contatar pelas redes:</p>
                         <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
-                            <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="linkedin.png" alt="LinkedIn" id="contato"></a>
+                            <a href="https://www.linkedin.com/in/biinaa-correa/"><img src="icon_linkedin_1.svg" alt="LinkedIn" id="contato"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://github.com/eubinacorrea"><img src="github.png" alt="GitHub" id="contato"></a>
+                            <a href="https://github.com/eubinacorrea"><img src="icon_github.svg" alt="GitHub" id="contato"></a>
                             <span style="opacity: 0.3;">|</span>
-                            <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="whatsapp.png" alt="Whatsapp" id="contato"></a>
+                            <a href="https://api.whatsapp.com/send?phone=5547996132914"><img src="icon_whats.svg" alt="Whatsapp" id="contato"></a>
                         </div>
                     </div>
                 </div>`;
