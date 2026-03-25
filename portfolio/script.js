@@ -46,11 +46,11 @@ function changeTab(section) {
             // No CORPO DO SITE (quadrado vermelho) colocamos a sua história
             corpo.innerHTML = `
                 <div class="sessao-livre">
-                    <img src="eu.png" class="minha-foto" style="float: left; margin-right: 30px;">
-                    <p>Olá! Eu sou a Sabrina, estudo Desenvolvimento Web...</p>
-                    <p>Aqui você pode escrever parágrafos longos, contar sobre sua transição de carreira, 
-                    sua experiência com suporte técnico e seus planos para o futuro pós-SCTEC.</p>
-                    <p>Como esse espaço não tem caixa, ele pode crescer o quanto você precisar!</p>
+                    <img src="eu.png" class="minha-foto" style="float: left; margin-right: 20px;">
+                    <p id="sobre">Olá! Me chamo Sabrina, estudo Desenvolvimento Web com o projeto do SESI/SENAI - SCTEC.</p>
+                    <hr style="margin: px 0; opacity: 0.5;">
+                    <p id="sobre2">Após a finalização do meu curso atual ja estou me programando para iniciar um novo curso profissionalizante ou ensino superior na área.</p>
+                     <p id="sobre2">Venho da área de atendimento, trabalhei em loja de moda praia e fitness, escola de inglês, e-commerce e também numa instituição financeira, como terceirizada, apoiando no processo de acordos financeiros de clientes inadimplentes. Por último consegui uma oportuinidade em uma empresa de T.I focada em sistema para gerenciamento de empresas, onde atuei como suporte tecnico.</p>
                     
                 </div>`;
         }
@@ -61,7 +61,7 @@ function changeTab(section) {
                 <div class="sessao-livre">
                     <div class="projeto-item">
                         <h3>💻 Projeto SCTEC</h3>
-                        <p>Todos os projetos abaixo foram desenvolvidos durante o curso SCTEC - SESI/SENAI.</p>
+                        <p>Todos os projetos abaixo foram desenvolvidos durante o curso SCTEC-SESI/SENAI.</p>
                         <a href="https://github.com/eubinacorrea/SCTEC_Curso/" target="_blank" style="color: #ffffff;">[ Ver Códigos no GitHub ]</a>
                     </div>
                     <hr style="margin: 20px 0; opacity: 0.3;">
@@ -78,9 +78,13 @@ function changeTab(section) {
                     <p>Vamos conversar? <br> Você pode me enviar uma mensagem:</p>                     
                     
                     <form style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 400px;">
+
                         <input type="text" placeholder="Seu nome" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+
                         <input type="email" placeholder="Seu e-mail" style="padding: 10px; background: rgba(0, 0, 0, 0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px;">
+
                         <textarea placeholder="Sua mensagem" style="padding: 10px; background: rgba(0,0,0,0.16); color: white; border: 6px solid #ffffff60; border-radius: 5px; height: 100px; resize: none;"></textarea>
+
                         <button type="submit" class="btn-nav" style="align-self: center; width: 150px;"><span>Enviar</span></button>
                     </form>
 
